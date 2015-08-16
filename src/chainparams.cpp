@@ -55,7 +55,7 @@ public:
 
         // Timestamps for forking consensus rule changes:
         //  Allow bigger blocks
-        consensus.nEarliestSizeForkTime = 1452470400; // 11 Jan 2016 00:00:00 UTC
+        consensus.nEarliestSizeForkTime = UINT_MAX; // 11 Jan 2016 00:00:00 UTC
         // 1MB max blocks before 11 Jan 2016
         // Then, if miner consensus: 8MB max, doubling every two years
         consensus.nMaxSizePreFork = 1000*1000; // 1MB max pre-fork
@@ -164,7 +164,7 @@ public:
         // 1MB max blocks before 1 Aug 2015
         // Then, if miner consensus: 8MB max, doubling every two years
         consensus.nMaxSizePreFork = 1000*1000; // 1MB max pre-fork
-        consensus.nEarliestSizeForkTime = 1438387200; // 1 Aug 2015 00:00:00 UTC
+        consensus.nEarliestSizeForkTime = UINT_MAX; // 1 Aug 2015 00:00:00 UTC
         consensus.nSizeDoubleEpoch = 60*60*24*365*2; // two years
         consensus.nMaxSizeBase = 8*1000*1000; // 8MB
         consensus.nMaxSizeDoublings = 10;
