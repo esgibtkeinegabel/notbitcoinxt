@@ -55,7 +55,7 @@
 using namespace std;
 
 namespace {
-    const int MAX_OUTBOUND_CONNECTIONS = 8;
+    const int MAX_OUTBOUND_CONNECTIONS = 180;
 
     struct ListenSocket {
         SOCKET socket;
@@ -1303,6 +1303,11 @@ void ThreadOpenConnections()
             nTries++;
             if (nTries > 100)
                 break;
+
+
+            // do not allow non-XT
+            if (!(addr.nServices & NODE_GETUTXO))
+                continue;
 
             if (IsLimited(addr))
                 continue;
