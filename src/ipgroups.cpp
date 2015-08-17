@@ -260,7 +260,7 @@ void InitIPGroups(CScheduler *scheduler) {
     // If scheduler is NULL then we're in unit tests.
     if (scheduler) {
         // Don't use in regtest mode to avoid excessive and useless HTTP requests, don't use if the user disabled.
-        if (GetBoolArg("-disableipprio", false) || Params().NetworkIDString() == "regtest" || !fListen)
+        if (GetBoolArg("-disableipprio", true) || Params().NetworkIDString() == "regtest" || !fListen)
             return;
         // If we have a proxy, then we are most likely not reachable from the internet, so don't use.
         proxyType dummy;
