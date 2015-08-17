@@ -1,22 +1,27 @@
 Not Bitcoin XT
 ==============
 
+This is darkxt
+
+DarkXT is a special branch of a special fork of a special fork.
+
 This is a special fork for those who do not agree with the blocksize scheduled
 increase as proposed by Gavin and Mike in their divisive altcoin fork, "Bitcoin XT".
 
-This version can be used to protect the status quo until real technical consensus 
-is formed about the blocksize.
+This version can be used to actively attack the XT network and defend the status quo
+until real technical consensus is formed about the blocksize.
 
-This version is indistinguishable from Bitcoin XT 0.11A except that it will not 
-actually hard fork to BIP101, yet appears on the p2p network as Bitcoin XT 0.11A 
+This version is indistinguishable from Bitcoin XT 0.11A except that it makes 180
+outbound connections instead of 8 and it only connects to XT nodes and it will not
+actually hard fork to BIP101, yet appears on the p2p network as Bitcoin XT 0.11A
 replete with features, yet at a consensus level behaves just like Bitcoin Core 0.11.
-If it is used to mine, it will produce XT block versions without actually 
+If it is used to mine, it will produce XT block versions without actually
 supporting >1MB blocks.
 
-Running this version and/or mining with XT block versions will make it impossible
-for the Bitcoin XT network to detect the correct switchover and cause a premature 
-fork of anyone foolish enough to support BIP101 without wide consensus from the 
-technical community.
+Running this version and/or mining with XT block versions will make it more expensive
+for people running XT nodes and impossible for the Bitcoin XT network to detect the
+correct switchover and cause a premature fork of anyone foolish enough to support
+BIP101 without wide consensus from the technical community.
 
 It prevents correct detection of Bitcoin XT adoption in the wild since usage will 
 be known to have been tampered with and thus all statistical data gathered by getnodes
